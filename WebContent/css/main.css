@@ -1,0 +1,308 @@
+/* -------------------- general -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsla(0, 0%, 100%, 1);
+  --paragraph: hsla(0, 0%, 30.2%, 1);
+  --primary: hsla(153, 100%, 33.3%, 1);
+  --primary-light: hsla(141, 50.2%, 56.7%, 1);
+  --primary-dark: hsla(153, 100%, 26.5%, 1);
+  --secondary: hsla(19, 100%, 59.2%, 1);
+  --secondary-light: hsla(17, 100%, 70.4%, 1);
+  --secondary-dark: hsla(19, 100%, 36.1%, 1);
+
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+  background: var(--bg);
+  color: var(--paragraph);
+
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--paragraph);
+}
+
+ul {
+  list-style: none;
+}
+
+.user-profile-picture {
+  width: 8rem;
+  border-radius: 20rem;
+  border: 3px solid var(--primary);
+
+  padding: 1rem;
+}
+
+.section-button:nth-child(n + 3) {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+table .inflow {
+  color: var(--primary);
+}
+
+table .outflow {
+  color: var(--secondary);
+}
+
+table .fas {
+  cursor: pointer;
+}
+
+/* -------------------- navbar -------------------- */
+#navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+
+  background: var(--primary-light);
+
+  padding: 3.5rem 4rem;
+}
+
+#navbar .logo:hover {
+  transform: scale(1.05);
+}
+
+#navbar a {
+  color: hsla(0, 0%, 100%, 0.6);
+
+  font-weight: 800;
+  font-size: 1.8rem;
+
+  transition: all 200ms;
+}
+
+#navbar a:hover {
+  color: var(--bg);
+}
+
+#navbar a:last-child::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--bg);
+
+  position: relative;
+  bottom: -1rem;
+
+  display: block;
+
+  transition: width 0.2s;
+}
+
+#navbar a:last-child:hover::after {
+  width: 100%;
+}
+
+#navbar .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* -------------------- main -------------------- */
+main {
+  padding-block: 9rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* -------------------- balance cards -------------------- */
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 4rem;
+
+  font-size: 2rem;
+  font-weight: 500;
+
+  color: var(--paragraph);
+}
+
+.cards .card {
+  border: 2px solid hsla(0, 0%, 30.2%, 0.5);
+  border-radius: 1rem;
+
+  padding: 3rem 4rem;
+  width: 90%;
+}
+
+.cards .card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-bottom: 1rem;
+}
+
+.cards .card .value {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.cards .card:first-child .value {
+  color: var(--primary);
+}
+
+/* -------------------- label/input list -------------------- */
+li label {
+  display: block;
+
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+input {
+  border: 2px solid hsla(0, 0%, 30.2%, 0.5);
+  border-radius: 0.5rem;
+
+  padding: 1.8rem 2rem;
+  font-size: 2rem;
+}
+
+form button {
+  width: 100%;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* -------------------- login and register logo/text -------------------- */
+.register-login-title {
+  text-align: center;
+  font-size: 4rem;
+
+  margin-bottom: 6rem;
+}
+
+.register-login-logo {
+  width: 7.2rem;
+  margin-bottom: 10rem;
+}
+
+.register-btn {
+  color: var(--primary);
+}
+
+.login-link {
+  font-size: 1.6rem;
+  margin-top: 3.5rem;
+}
+
+.login-checkbox {
+  font-size: 1.6rem;
+  margin-top: 3.5rem;
+}
+
+button {
+  margin-top: 3.5rem;
+  display: flex;
+  width: 244px;
+  padding: 16px 0px 17px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid rgba(77, 77, 77, 0.5);
+  background-color: var(--primary-light);
+  color: var(--bg);
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.wrapper-table {
+  overflow-x: scroll;
+
+  width: 100%;
+
+  padding-inline: 3.5rem;
+}
+
+table {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+
+  border-collapse: collapse;
+
+  margin-top: 6rem;
+}
+
+table th {
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+table th,
+table td {
+  padding: 1.5rem;
+}
+
+table td:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+table tr:first-child {
+  border-bottom: 2px solid hsla(0, 0%, 30.2%, 0.5);
+}
+
+table .investment-value {
+  color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: block;
+    padding-inline: 9rem;
+  }
+
+  #navbar {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #navbar .menu ul {
+    gap: 4rem;
+  }
+
+  .cards {
+    flex-wrap: nowrap;
+    gap: 5rem;
+  }
+}
+
+.title-pages {
+  font-size: 2.6rem;
+  font-weight: bold;
+}

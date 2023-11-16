@@ -1,0 +1,26 @@
+a {
+  color: var(--primary);
+}
+
+main {
+  padding-block: 6rem;
+
+  display: flex;
+}
+
+.logo-login {
+  margin-bottom: 4rem;
+}
+
+.input-list li:not(:first-child) {
+  margin-top: 4%;
+}
+
+.login-checkbox,
+.login-link {
+  text-align: center;
+}
+
+.area-formulario button {
+  width: 100%;
+}

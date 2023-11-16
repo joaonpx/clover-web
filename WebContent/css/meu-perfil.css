@@ -1,0 +1,27 @@
+.profile-picture {
+  text-align: center;
+  font-size: 1.8rem;
+
+  margin-bottom: 6rem;
+}
+
+.profile-picture .user-profile-picture {
+  width: 20rem;
+  margin-bottom: 1rem;
+
+  padding: 2rem;
+}
+
+a {
+  color: var(--primary);
+}
+
+main {
+  padding-block: 6rem;
+
+  display: flex;
+}
+
+#navbar a#nav-perfil {
+  color: var(--bg);
+}

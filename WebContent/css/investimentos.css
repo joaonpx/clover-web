@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 4rem;
+
+  margin-top: 7rem;
+}
+
+.wrapper a {
+  font-size: 2rem;
+  font-weight: 800;
+
+  opacity: 0.5;
+
+  transition: all 200ms;
+}
+
+.wrapper a:hover {
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 650px) {
+  .wrapper-table {
+    overflow-x: hidden;
+  }
+}
+
+#navbar a#nav-investimentos {
+  color: var(--bg);
+}

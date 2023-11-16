@@ -1,0 +1,132 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+h1 {
+  margin: 20px;
+}
+
+.popup,
+.popup-edit {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: 99;
+}
+
+.popup-trash {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: 99;
+}
+
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 50%;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+form {
+  position: relative;
+}
+
+.input-list li {
+  text-align: left;
+  margin: 10px;
+}
+
+.ds_transacao,
+.ds_sonho {
+  min-width: 100%;
+}
+
+.descricao {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.valor-transacao,
+.valor-sonho {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.outros-input,
+.valor-investimento {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+select {
+  width: 100%;
+  min-width: 20em;
+  border: 2px solid hsla(0, 0%, 30.2%, 0.5);
+  border-radius: 0.5rem;
+  padding: 1.8rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-trash {
+  display: flex;
+}
+
+.button-cancel {
+  background-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  .popup-content {
+    width: 90%;
+  }
+
+  .popup-content input {
+    width: 100%;
+  }
+
+  select {
+    min-width: 95%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .edit-trash button {
+    margin: 0 1rem;
+  }
+}

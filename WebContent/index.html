@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clover | Cadastro</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <main>
+      <div class="area-logo">
+        <img
+          class="register-login-logo logo-login"
+          src="./assets/logo.svg"
+          alt="Clover Logo marca"
+        />
+      </div>
+      <div class="register-login-title">
+        <p>
+          <strong>Cadastre-se</strong>
+        </p>
+      </div>
+      <form action="home" method="post" class="area-formulario">
+        <ul class="input-list">
+          <li>
+            <label for="id-user-name">Nome</label>
+            <input
+              type="text"
+              name="user-name"
+              id="id-user-name"
+              placeholder=""
+              required
+            />
+          </li>
+          <li>
+            <label for="id-user-email">E-mail</label>
+            <input
+              type="email"
+              name="user-email"
+              id="id-user-email"
+              placeholder=""
+              required
+            />
+          </li>
+          <li>
+            <label for="id-user-password">Senha</label>
+            <input
+              type="password"
+              name="user-password"
+              id="id-user-passoword"
+              placeholder=""
+              required
+            />
+          </li>
+          <li>
+            <label for="id-user-repassword">Digite novamente sua senha</label>
+            <input
+              type="password"
+              name="user-repassword"
+              id="id-user-repassword"
+              placeholder=""
+              required
+            />
+          </li>
+        </ul>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <div class="login-link">
+        <p>Já possui uma conta? <a href="#">Faça login.</a></p>
+      </div>
+    </main>
+  </body>
+</html>
